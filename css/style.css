@@ -820,6 +820,38 @@ ol {
 	color: #ffffff;
 }
 
+.ps-item:hover .pi-price span1 {
+    color: #C0C0C0;
+    text-shadow: -2px 0 5px rgba(192, 192, 192, 0.8),   
+                -4px 0 10px rgba(192, 192, 192, 0.6),  
+                -6px 0 15px rgba(192, 192, 192, 0.4),  
+                2px 0 5px rgba(192, 192, 192, 0.8),    
+                4px 0 10px rgba(192, 192, 192, 0.6),    
+                6px 0 15px rgba(192, 192, 192, 0.4);    
+}
+
+
+.ps-item:hover .pi-price span2 {
+    color: #FFD700; 
+    text-shadow: -2px 0 5px rgba(255, 215, 0, 0.8),   
+                -4px 0 10px rgba(255, 215, 0, 0.6),   
+                -6px 0 15px rgba(255, 215, 0, 0.4),  
+                2px 0 5px rgba(255, 215, 0, 0.8),     
+                4px 0 10px rgba(255, 215, 0, 0.6),   
+                6px 0 15px rgba(255, 215, 0, 0.4);    
+}
+
+.ps-item:hover .pi-price span3 {
+    color: #E5E4E2; 
+    text-shadow: -2px 0 5px rgba(229, 228, 226, 0.8),  
+                -4px 0 10px rgba(229, 228, 226, 0.6),  
+                -6px 0 15px rgba(229, 228, 226, 0.4),  
+                2px 0 5px rgba(229, 228, 226, 0.8),    
+                4px 0 10px rgba(229, 228, 226, 0.6),   
+                6px 0 15px rgba(229, 228, 226, 0.4);   
+}
+
+
 .ps-item:hover ul li {
 	color: #ffffff;
 	font-weight: 600;
