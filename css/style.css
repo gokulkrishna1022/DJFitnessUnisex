@@ -500,6 +500,7 @@ ol {
 
 .canvas-open {
 	display: none;
+	
 }
 
 /*---------------------
@@ -2460,8 +2461,8 @@ button:hover {
 	}
 	.canvas-open {
 		position: absolute;
-		right: 40px;
-		top: 61px;
+		right: 25px;
+		top: 25px;
 		font-size: 22px;
 		width: 30px;
 		height: 30px;
@@ -2606,8 +2607,8 @@ button:hover {
 	}
 	.canvas-open {
 		position: absolute;
-		right: 40px;
-		top: 61px;
+		right: 25px;
+		top: 25px;
 		font-size: 22px;
 		width: 30px;
 		height: 30px;
