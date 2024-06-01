@@ -746,7 +746,7 @@ ol {
 }
 
 
-button {
+button1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -2200,6 +2200,7 @@ button:hover {
 	padding-left: 20px;
 	padding-right: 5px;
 	background: transparent;
+	margin-top: 10px;
 	margin-bottom: 20px;
 }
 
@@ -2266,6 +2267,7 @@ button:hover {
 	border: none;
 	padding: 14px 0 12px;
 	background: #F7FF05;
+
 }
 
 
