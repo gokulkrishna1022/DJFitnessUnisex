@@ -2618,6 +2618,11 @@ button:hover {
 	.blog-item .bi-pic img {
 		height: auto;
 	}
+	.logo1  {
+		height: 100px;
+		width: 200px;
+		margin-left: 25%;
+	}
 	
 }
 
@@ -2849,6 +2854,11 @@ button:hover {
 	.search-model-form input {
 		width: 100%;
 	}
+	.logo1  {
+		height: 100px;
+		width: 200px;
+		margin-left: 25%;
+	}
 }
 
 /* Small Device = 320px */
@@ -2885,5 +2895,10 @@ button:hover {
 	}
 	.search-model-form input {
 		font-size: 28px;
+	}
+	.logo1  {
+		height: 100px;
+		width: 200px;
+		margin-left: 25%;
 	}
 }

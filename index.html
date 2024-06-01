@@ -103,10 +103,10 @@
             const bgImage = window.innerWidth < 768 ? section.dataset.setbgSmall : section.dataset.setbg;
             section.style.backgroundImage = `url('${bgImage}')`;
         }
-
-        // Initial check
-        updateBackground();
-
+    
+        // Initial check after DOM content is loaded
+        document.addEventListener('DOMContentLoaded', updateBackground);
+    
         // Update on resize
         window.addEventListener('resize', updateBackground);
     </script>
