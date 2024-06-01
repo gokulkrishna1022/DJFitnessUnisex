@@ -98,34 +98,53 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hs-slider owl-carousel">
-            <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-6">
-                            <div class="hi-text">
-                                <span>Shape your body</span>
-                                <h1>Be <strong>strong</strong> training hard</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-6">
-                            <div class="hi-text">
-                                <span>Shape your body</span>
-                                <h1>Be <strong>strong</strong> training hard</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="banner-section1 set-bg" data-setbg="img/banner-bg.jpg">
     </section>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="img/hero/1.jpg" alt="Image 1">
+            <img src="img/hero/2.jpg" alt="Image 2">
+            <img src="img/hero/3.jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const slider = document.querySelector('.slider');
+            const slideWidth = document.querySelector('.slider-container').offsetWidth;
+            const transformValue = -index * slideWidth;
+            slider.style.transform = `translateX(${transformValue}px)`;
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
+        }
+
+        function autoSlide() {
+            nextSlide();
+            setTimeout(autoSlide, 10000);
+        }
+
+        // Initial setup
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentIndex);
+            setTimeout(autoSlide, 10000); // Start the automatic sliding
+        });
+    </script>
+    
+
 
     <section class="choseus-section spad">
         <div class="container">

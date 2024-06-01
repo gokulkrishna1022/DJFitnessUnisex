@@ -595,7 +595,7 @@ ol {
 
 .hs-slider .hs-item .hi-text .primary-btn {
 	position: relative;
-	top: 100px;
+	top: 10px;
 	opacity: 0;
 }
 
@@ -721,6 +721,70 @@ ol {
 	bottom: 26px;
 }
 
+
+/*---------------------
+  Offer photos
+-----------------------*/
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%; /* Default width for mobile phones */
+}
+
+.slider img {
+
+    object-fit: contain; /* Ensures the image fits within the container without cropping */
+    width: 100%;
+	background: #0a0a0a;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (min-width: 768px) {
+    .slider {
+        width: 300%; /* Adjust width for larger screens like laptops */
+    }
+	.slider img {
+
+		object-fit: contain; /* Ensures the image fits within the container without cropping */
+		width: 100%;
+		height:600px;
+		background: #0a0a0a;
+	}
+}
+
+
 /*---------------------
   Banner Section
 -----------------------*/
@@ -740,7 +804,7 @@ ol {
 }
 .banner-section1{
 	width: 100%;
-	height: 400px; /* Adjust height as needed */
+	height: 350px; /* Adjust height as needed */
 	background-size: cover;
 	background-position: center;
 }
