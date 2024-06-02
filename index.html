@@ -100,7 +100,7 @@
     <script>
         function updateBackground() {
             const section = document.querySelector('.banner-section1');
-            const bgImage = window.innerWidth < 768 ? section.dataset.setbgSmall : section.dataset.setbg;
+            const bgImage = window.innerWidth < 1250 ? section.dataset.setbgSmall : section.dataset.setbg;
             section.style.backgroundImage = `url('${bgImage}')`;
         }
     
